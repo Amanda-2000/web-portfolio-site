@@ -24,13 +24,13 @@ const Home = () => {
               IT Graduate | QA Engineer | Web Developer | Process Analyst
             </h2>
             <p className={styles.degree}>
-              BSc (Hons) in Information Technology | Northshore International Campus
+              BSc (Hons) in Information Technology | General Sir John Kotelawala Defence University
             </p>
             <p className={styles.bio}>
               Passionate about building user-friendly applications and ensuring
               software quality through rigorous testing and process optimization.
             </p>
-            
+
             <div className={styles.cta}>
               <a href={cvFile} download className={styles.primaryBtn}>
                 Download CV <Download size={18} />
