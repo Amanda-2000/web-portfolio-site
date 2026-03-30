@@ -18,7 +18,7 @@ const Home = () => {
           >
             <span className={styles.badge}>Welcome to my portfolio</span>
             <h1 className={styles.name}>
-              Hi, I'm <span className="highlight">Amanda Yohani</span>
+              Hi, I'm <span className="highlight">Amanda Dissanayaka</span>
             </h1>
             <h2 className={styles.role}>
               IT Graduate | QA Engineer | Web Developer | Process Analyst
