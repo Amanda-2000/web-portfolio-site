@@ -8,17 +8,17 @@ const About = () => {
     {
       icon: <BookOpen className={styles.icon} />,
       title: 'Education',
-      desc: 'BSc (Hons) in Information Technology from Northshore International Campus.',
+      desc: 'BSc (Hons) in Information Technology from General Sir John Kotelawala Defence University',
     },
     {
       icon: <Briefcase className={styles.icon} />,
       title: 'Experience',
-      desc: 'QA Internship and Web Development projects focused on modern tech stacks.',
+      desc: 'QA Internship at Bank of Ceylon and Web Development projects focused on modern tech stacks.',
     },
     {
       icon: <Award className={styles.icon} />,
       title: 'Certifications',
-      desc: 'Certified in QA Automation, ISTQB Foundation (in progress), and Full Stack Dev.',
+      desc: 'ISTQB Foundation (in progress)',
     },
     {
       icon: <Heart className={styles.icon} />,
@@ -49,21 +49,21 @@ const About = () => {
         >
           <h3>Who is Amanda?</h3>
           <p>
-            I am a recent IT Graduate with a strong foundation in software quality assurance, 
-            web development, and process analysis. My journey in technology started with a 
-            deep curiosity about how software is built and how it can be improved to 
+            I am a recent IT Graduate with a strong foundation in software quality assurance,
+            web development, and process analysis. My journey in technology started with a
+            deep curiosity about how software is built and how it can be improved to
             provide a seamless user experience.
           </p>
           <p>
-            With a background in Information Technology, I've developed a keen eye for 
-            detail and a structured approach to problem-solving. Whether it's finding 
-            bugs as a QA Engineer, crafting responsive interfaces as a Web Developer, 
-            or optimizing workflows as a Process Analyst, I am dedicated to delivering 
+            With a background in Information Technology, I've developed a keen eye for
+            detail and a structured approach to problem-solving. Whether it's finding
+            bugs as a QA Engineer, crafting responsive interfaces as a Web Developer,
+            or optimizing workflows as a Process Analyst, I am dedicated to delivering
             excellence in every project I undertake.
           </p>
           <p>
-            I believe that the best applications are not just functional but also 
-            intuitive and reliable. My goal is to bridge the gap between technical 
+            I believe that the best applications are not just functional but also
+            intuitive and reliable. My goal is to bridge the gap between technical
             complexity and user-centric design.
           </p>
         </motion.div>

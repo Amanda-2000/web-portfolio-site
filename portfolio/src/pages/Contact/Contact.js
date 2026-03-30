@@ -75,25 +75,25 @@ const Contact = () => {
         >
           <h3>Contact Information</h3>
           <p>Feel free to reach out for any collaboration or inquiries.</p>
-          
+
           <div className={styles.infoList}>
             <ContactInfo
               icon={<Mail size={20} />}
               title="Email"
-              value="amanda@example.com"
-              link="mailto:amanda@example.com"
+              value="amandayohani32@gmail.com"
+              link="mailto:amandayohani32@gmail.com"
             />
             <ContactInfo
               icon={<LinkedinIcon size={20} />}
               title="LinkedIn"
-              value="linkedin.com/in/amandads"
-              link="https://linkedin.com/in/amandads"
+              value="linkedin.com/in/amanda-dissanayaka"
+              link="https://www.linkedin.com/in/amanda-dissanayaka-777311288"
             />
             <ContactInfo
               icon={<GithubIcon size={20} />}
               title="GitHub"
-              value="github.com/amandads"
-              link="https://github.com/amandads"
+              value="github.com/Amanda-2000"
+              link="https://github.com/Amanda-2000"
             />
             <ContactInfo
               icon={<MapPin size={20} />}
