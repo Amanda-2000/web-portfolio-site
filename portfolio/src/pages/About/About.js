@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { BookOpen, Briefcase, Award, Heart } from 'lucide-react';
 import styles from './About.module.css';
+import Experience from '../Experience/Experience';
 
 const About = () => {
   const infoCards = [
@@ -83,6 +84,10 @@ const About = () => {
             </div>
           ))}
         </motion.div>
+      </div>
+
+      <div className={styles.experienceWrapper}>
+        <Experience />
       </div>
     </section>
   );
