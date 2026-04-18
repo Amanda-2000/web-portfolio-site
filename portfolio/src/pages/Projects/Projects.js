@@ -38,7 +38,7 @@ const ProjectCard = ({ title, role, desc, tech, responsibilities, github, demo, 
         <h3>{title}</h3>
         <h4 className={styles.role}>{role}</h4>
         <p className={styles.desc}>{desc}</p>
-        
+
         <div className={styles.responsibilities}>
           <h5>Key Responsibilities:</h5>
           <ul>
@@ -63,69 +63,74 @@ const ProjectCard = ({ title, role, desc, tech, responsibilities, github, demo, 
 const Projects = () => {
   const projects = [
     {
+      title: 'Cafe Miron Food Ordering System',
+      role: 'Quality Assurance Engineer & Web Developer',
+      desc: 'A comprehensive food ordering and café management system featuring both a web-based platform and a mobile application for streamlined operations.',
+      tech: ['HTML', 'CSS', 'JavaScript', 'Firebase', 'Flutter'],
+      responsibilities: [
+        'Designed and developed the front-end and backend components of the café management system, including API integration for billing and inventory.',
+        'Implemented a responsive UI/UX and managed real-time data flow using Firebase for order tracking.',
+        'Led the QA process by designing test cases and performing functional, usability, and regression testing to ensure system stability.',
+        'Identified, documented, and tracked defects to maintain high software quality across web and mobile platforms.'
+      ],
+      github: 'https://github.com/Amanda2000/WebProject',
+      image: 'https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=800&auto=format&fit=crop',
+    },
+    {
+      title: 'CSV Data Analyzer and Visualizer',
+      role: 'Quality Assurance Engineer & Frontend Designer',
+      desc: 'A full-stack web application designed to process, analyze, and visualize CSV data through interactive charts and automated data handling.',
+      tech: ['React.js', 'Python', 'Flask', 'Pandas', 'Chart.js', 'Bootstrap', 'REST API'],
+      responsibilities: [
+        'Designed and developed an interactive user interface using React.js and Bootstrap for seamless data exploration.',
+        'Developed REST API endpoints using Flask to bridge the gap between frontend requests and Python-based data processing.',
+        'Executed rigorous functional and usability testing to ensure the accuracy of data analysis and chart visualizations.',
+        'Designed test cases for file upload mechanisms and identified defects in API responses and data handling workflows.'
+      ],
+      github: 'https://github.com/Amanda2000/CSV-Analyzer', // Replace with your actual link if different
+      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop',
+    },
+    {
       title: 'Research Agent',
       role: 'Frontend Developer & System Architect',
-      desc: 'An AI-powered research assistant capable of generating detailed insights and summaries based on user queries.',
+      desc: 'An AI-powered research assistant designed to process complex queries and generate structured, actionable insights using large language models.',
       tech: ['Python', 'LangChain', 'OpenAI', 'Pydantic', 'dotenv'],
       responsibilities: [
-        'Implemented an interactive interface to display AI-generated research insights and summaries.',
-        'Ensured a smooth user experience by structuring responses clearly for easy understanding.',
-        'Designed the overall architecture for the AI powered research assistant system.'
+        'Designed the overall system architecture to integrate AI-driven research capabilities with a robust backend.',
+        'Implemented an interactive frontend interface to visualize AI-generated insights and summaries effectively.',
+        'Structured complex AI responses into clear, digestible formats to enhance user experience and readability.',
+        'Utilized Pydantic for data validation and LangChain for managing autonomous agent workflows.'
       ],
       github: 'https://github.com/Buwanekafernando/Research-Assistant-Aiagent',
       image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=800&auto=format&fit=crop',
     },
     {
-      title: 'Cafe Miron Food Ordering System',
-      role: 'Full Stack Developer',
-      desc: 'A full-stack ordering platform featuring a responsive web interface and a Flutter mobile app.',
-      tech: ['HTML', 'CSS', 'JavaScript', 'Flutter', 'Firebase'],
+      title: 'Crowdsourced Tourist Guide for Anuradhapura',
+      role: 'Mobile Application Developer',
+      desc: 'A community-driven travel platform that empowers users to share real-time tips, discover hidden destinations, and navigate historic sites through crowdsourced data.',
+      tech: ['Flutter', 'Firebase', 'Google Maps API'],
       responsibilities: [
-        'Handled end-to-end delivery from designing UI/UX to deployment.',
-        'Integrated Firebase APIs for real-time data synchronization across platforms.',
-        'Executed comprehensive functional and regression testing suites to ensure reliability.'
+        'Developed a cross-platform mobile application using Flutter, focusing on a high-performance and seamless UI/UX.',
+        'Integrated Google Maps API to provide interactive, location-based travel recommendations and navigation.',
+        'Implemented secure user authentication and scalable cloud data storage using the Firebase ecosystem.',
+        'Developed personalized recommendation features that adapt content based on user feedback and travel preferences.'
       ],
-      github: 'https://github.com/Amanda-2000/WebProject',
-      image: 'https://images.unsplash.com/photo-1550966842-2849a2233a7c?q=80&w=800&auto=format&fit=crop',
+      github: 'https://github.com/Amanda2000/Anuradhapura-Guide', // Replace with your actual link if different
+      image: 'https://images.unsplash.com/photo-1588598136850-cb819f3936dc?q=80&w=800&auto=format&fit=crop',
     },
     {
-      title: 'CSV Data Analyzer and Visualizer',
-      role: 'Frontend Developer & System Architect',
-      desc: 'A full-stack data tool designed to process and visualize CSV files via a REST API.',
-      tech: ['React', 'Python', 'Flask', 'Pandas', 'Chart.js', 'Bootstrap'],
+      title: 'OrangeHRM Login Test Automation',
+      role: 'Test Automation Engineer',
+      desc: 'A robust automation suite designed to validate the authentication security and functional reliability of the OrangeHRM login module.',
+      tech: ['Selenium WebDriver', 'Java', 'IntelliJ IDEA'],
       responsibilities: [
-        'Spearheaded the frontend design using React and Chart.js for dynamic visualization.',
-        'Served as the lead QA, ensuring data integrity across complex datasets.',
-        'Executed rigorous functional testing of the Python/Pandas backend processing logic.'
+        'Developed and executed a suite of automated test cases covering valid/invalid credentials, empty fields, and authentication tokens.',
+        'Leveraged Selenium WebDriver and Java to automate repetitive manual testing tasks, increasing test coverage and efficiency.',
+        'Performed detailed defect documentation and reporting to ensure a seamless and secure user entry point.',
+        'Configured the testing environment within IntelliJ to manage dependencies and streamline script execution.'
       ],
-      github: 'https://github.com/Buwanekafernando/Cv-analyzes-Agent',
-      image: 'https://images.unsplash.com/photo-1551288049-bbda4833effb?q=80&w=800&auto=format&fit=crop',
-    },
-    {
-      title: 'API Testing Collection',
-      role: 'QA Engineer',
-      desc: 'An automated Postman collection for testing RESTful services, including environment variables and assertions.',
-      tech: ['Postman', 'JavaScript', 'Newman'],
-      responsibilities: [
-        'Created an automated Postman collection for efficient testing of RESTful services.',
-        'Implemented comprehensive assertions to validate response data and status codes.',
-        'Configured environment variables for seamless switching between test environments.'
-      ],
-      github: 'https://github.com/Amanda-2000',
-      image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800&auto=format&fit=crop',
-    },
-    {
-      title: 'Portfolio Website',
-      role: 'Frontend Developer',
-      desc: 'A personal portfolio website focused on performance and modern aesthetics.',
-      tech: ['React', 'Framer Motion', 'Vanilla CSS'],
-      responsibilities: [
-        'Designed and developed the website using React and Framer Motion for smooth animations.',
-        'Optimized for performance and responsive layout across all device sizes.',
-        'Implemented modern aesthetics using Vanilla CSS for maximum flexibility.'
-      ],
-      github: 'https://github.com/Amanda-2000',
-      image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=800&auto=format&fit=crop',
+      github: 'https://github.com/Amanda2000/Automation-Project', // Replace with your actual link
+      image: 'https://images.unsplash.com/photo-1516116216624-53e697fedbea?q=80&w=800&auto=format&fit=crop',
     },
   ];
 
