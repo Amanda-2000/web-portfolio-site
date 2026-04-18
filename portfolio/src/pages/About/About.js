@@ -19,12 +19,12 @@ const About = () => {
     {
       icon: <Award className={styles.icon} />,
       title: 'Certifications',
-      desc: 'ISTQB Foundation (in progress)',
+      desc: 'Software Quality Assurance Testing by FSD Academy',
     },
     {
       icon: <Heart className={styles.icon} />,
       title: 'Interests',
-      desc: 'Passionate about UI/UX, process automation, and learning new technologies.',
+      desc: 'Passionate about Business Analysis, process automation, and learning new technologies.',
     },
   ];
 

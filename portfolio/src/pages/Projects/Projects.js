@@ -73,7 +73,7 @@ const Projects = () => {
         'Led the QA process by designing test cases and performing functional, usability, and regression testing to ensure system stability.',
         'Identified, documented, and tracked defects to maintain high software quality across web and mobile platforms.'
       ],
-      github: 'https://github.com/Amanda2000/WebProject',
+      github: 'https://github.com/Amanda-2000/WebProject',
       image: 'https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=800&auto=format&fit=crop',
     },
     {
@@ -87,7 +87,7 @@ const Projects = () => {
         'Executed rigorous functional and usability testing to ensure the accuracy of data analysis and chart visualizations.',
         'Designed test cases for file upload mechanisms and identified defects in API responses and data handling workflows.'
       ],
-      github: 'https://github.com/Amanda2000/CSV-Analyzer', // Replace with your actual link if different
+      github: 'https://github.com/Buwanekafernando/Cv-analyzes-Agent', // Replace with your actual link if different
       image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop',
     },
     {
@@ -115,8 +115,7 @@ const Projects = () => {
         'Implemented secure user authentication and scalable cloud data storage using the Firebase ecosystem.',
         'Developed personalized recommendation features that adapt content based on user feedback and travel preferences.'
       ],
-      github: 'https://github.com/Amanda2000/Anuradhapura-Guide', // Replace with your actual link if different
-      image: 'https://images.unsplash.com/photo-1588598136850-cb819f3936dc?q=80&w=800&auto=format&fit=crop',
+      image: 'https://images.pexels.com/photos/7235804/pexels-photo-7235804.jpeg?cs=srgb&dl=pexels-n-voitkevich-7235804.jpg&fm=jpg',
     },
     {
       title: 'OrangeHRM Login Test Automation',
@@ -129,7 +128,6 @@ const Projects = () => {
         'Performed detailed defect documentation and reporting to ensure a seamless and secure user entry point.',
         'Configured the testing environment within IntelliJ to manage dependencies and streamline script execution.'
       ],
-      github: 'https://github.com/Amanda2000/Automation-Project', // Replace with your actual link
       image: 'https://images.unsplash.com/photo-1516116216624-53e697fedbea?q=80&w=800&auto=format&fit=crop',
     },
   ];

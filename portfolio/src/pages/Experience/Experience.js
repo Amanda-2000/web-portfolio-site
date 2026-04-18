@@ -7,6 +7,21 @@ const Experience = () => {
   const experiences = [
     {
       type: 'work',
+      title: 'Process Analyst',
+      company: 'HCL Tech',
+      date: 'March 2026 - Present',
+      projects: [
+        {
+          name: 'Scale Tech',
+          responsibilities: [
+            'Project to be initiated'
+          ]
+        }
+      ],
+      icon: <Briefcase size={18} />,
+    },
+    {
+      type: 'work',
       title: 'QA Trainee',
       company: 'Bank of Ceylon',
       date: 'September 2025 - February 2026',
@@ -68,7 +83,7 @@ const Experience = () => {
           <h5>{exp.company}</h5>
           <p>{exp.date}</p>
         </div>
-        
+
         {exp.desc && <p className={styles.desc}>{exp.desc}</p>}
 
         {exp.projects && (

@@ -1,11 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { 
-  Code2, 
-  Globe, 
-  Database, 
-  Cpu, 
-  Layers, 
+import {
+  Code2,
+  Globe,
+  Database,
+  Cpu,
+  Layers,
   CheckCircle2,
   Terminal,
   Settings,
@@ -61,7 +61,7 @@ const Skills = () => {
     { name: 'Manual Testing', percent: 95 },
     { name: 'Automation Testing (Selenium)', percent: 80 },
     { name: 'API Testing (Postman)', percent: 85 },
-    { name: 'Bug Tracking (Jira)', percent: 90 },
+    { name: 'Bug Tracking (Jira)', percent: 80 },
     { name: 'SQL for Testing', percent: 75 },
     { name: 'Performance Testing', percent: 70 },
   ];
