@@ -52,7 +52,7 @@ const ProjectCard = ({ title, desc, tech, github, demo, image }) => {
 const Projects = () => {
   const projects = [
     {
-      title: 'QA Automation Framework',
+      title: 'BOC Library Managment System',
       desc: 'A comprehensive selenium-based automation framework for testing e-commerce web applications, featuring detailed reporting and cross-browser support.',
       tech: ['Selenium', 'Java', 'TestNG', 'Maven'],
       github: 'https://github.com/Amanda-2000',

@@ -21,14 +21,6 @@ const Experience = () => {
       desc: 'Completed several key projects in web dev and process analysis.',
       icon: <GraduationCap size={18} />,
     },
-    {
-      type: 'school',
-      title: 'G.C.E Advanced Level',
-      company: 'Eppawala Central College, Eppawala',
-      date: '2020',
-      desc: '',
-      icon: <GraduationCap size={18} />,
-    },
   ];
 
   const workExp = experiences.filter(exp => exp.type === 'work');
