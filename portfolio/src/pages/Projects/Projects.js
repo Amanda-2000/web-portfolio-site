@@ -9,7 +9,7 @@ const GithubIcon = ({ size }) => (
   </svg>
 );
 
-const ProjectCard = ({ title, desc, tech, github, demo, image }) => {
+const ProjectCard = ({ title, role, desc, tech, responsibilities, github, demo, image }) => {
   return (
     <motion.div
       className={styles.card}
@@ -36,7 +36,18 @@ const ProjectCard = ({ title, desc, tech, github, demo, image }) => {
       </div>
       <div className={styles.content}>
         <h3>{title}</h3>
-        <p>{desc}</p>
+        <h4 className={styles.role}>{role}</h4>
+        <p className={styles.desc}>{desc}</p>
+        
+        <div className={styles.responsibilities}>
+          <h5>Key Responsibilities:</h5>
+          <ul>
+            {responsibilities.map((task, index) => (
+              <li key={index}>{task}</li>
+            ))}
+          </ul>
+        </div>
+
         <div className={styles.techStack}>
           {tech.map((item, index) => (
             <span key={index} className={styles.techTag}>
@@ -52,31 +63,67 @@ const ProjectCard = ({ title, desc, tech, github, demo, image }) => {
 const Projects = () => {
   const projects = [
     {
-      title: 'BOC Library Managment System',
-      desc: 'A comprehensive selenium-based automation framework for testing e-commerce web applications, featuring detailed reporting and cross-browser support.',
-      tech: ['Selenium', 'Java', 'TestNG', 'Maven'],
-      github: 'https://github.com/Amanda-2000',
-      image: 'https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?q=80&w=800&auto=format&fit=crop',
+      title: 'Research Agent',
+      role: 'Frontend Developer & System Architect',
+      desc: 'An AI-powered research assistant capable of generating detailed insights and summaries based on user queries.',
+      tech: ['Python', 'LangChain', 'OpenAI', 'Pydantic', 'dotenv'],
+      responsibilities: [
+        'Implemented an interactive interface to display AI-generated research insights and summaries.',
+        'Ensured a smooth user experience by structuring responses clearly for easy understanding.',
+        'Designed the overall architecture for the AI powered research assistant system.'
+      ],
+      github: 'https://github.com/Buwanekafernando/Research-Assistant-Aiagent',
+      image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=800&auto=format&fit=crop',
     },
     {
-      title: 'E-commerce React Dashboard',
-      desc: 'A modern, responsive admin dashboard for managing products, tracking sales, and visualizing data using Chart.js.',
-      tech: ['React', 'CSS Modules', 'Chart.js', 'Firebase'],
-      github: 'https://github.com/Amanda-2000',
-      demo: 'https://demo.example.com',
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop',
+      title: 'Cafe Miron Food Ordering System',
+      role: 'Full Stack Developer',
+      desc: 'A full-stack ordering platform featuring a responsive web interface and a Flutter mobile app.',
+      tech: ['HTML', 'CSS', 'JavaScript', 'Flutter', 'Firebase'],
+      responsibilities: [
+        'Handled end-to-end delivery from designing UI/UX to deployment.',
+        'Integrated Firebase APIs for real-time data synchronization across platforms.',
+        'Executed comprehensive functional and regression testing suites to ensure reliability.'
+      ],
+      github: 'https://github.com/Amanda-2000/WebProject',
+      image: 'https://images.unsplash.com/photo-1550966842-2849a2233a7c?q=80&w=800&auto=format&fit=crop',
+    },
+    {
+      title: 'CSV Data Analyzer and Visualizer',
+      role: 'Frontend Developer & System Architect',
+      desc: 'A full-stack data tool designed to process and visualize CSV files via a REST API.',
+      tech: ['React', 'Python', 'Flask', 'Pandas', 'Chart.js', 'Bootstrap'],
+      responsibilities: [
+        'Spearheaded the frontend design using React and Chart.js for dynamic visualization.',
+        'Served as the lead QA, ensuring data integrity across complex datasets.',
+        'Executed rigorous functional testing of the Python/Pandas backend processing logic.'
+      ],
+      github: 'https://github.com/Buwanekafernando/Cv-analyzes-Agent',
+      image: 'https://images.unsplash.com/photo-1551288049-bbda4833effb?q=80&w=800&auto=format&fit=crop',
     },
     {
       title: 'API Testing Collection',
-      desc: 'An automated Postman collection for testing RESTful services, including environment variables, scripts, and comprehensive assertions.',
+      role: 'QA Engineer',
+      desc: 'An automated Postman collection for testing RESTful services, including environment variables and assertions.',
       tech: ['Postman', 'JavaScript', 'Newman'],
+      responsibilities: [
+        'Created an automated Postman collection for efficient testing of RESTful services.',
+        'Implemented comprehensive assertions to validate response data and status codes.',
+        'Configured environment variables for seamless switching between test environments.'
+      ],
       github: 'https://github.com/Amanda-2000',
       image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800&auto=format&fit=crop',
     },
     {
       title: 'Portfolio Website',
-      desc: 'A personal portfolio website designed with React and Framer Motion, focusing on performance and modern aesthetics.',
+      role: 'Frontend Developer',
+      desc: 'A personal portfolio website focused on performance and modern aesthetics.',
       tech: ['React', 'Framer Motion', 'Vanilla CSS'],
+      responsibilities: [
+        'Designed and developed the website using React and Framer Motion for smooth animations.',
+        'Optimized for performance and responsive layout across all device sizes.',
+        'Implemented modern aesthetics using Vanilla CSS for maximum flexibility.'
+      ],
       github: 'https://github.com/Amanda-2000',
       image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=800&auto=format&fit=crop',
     },

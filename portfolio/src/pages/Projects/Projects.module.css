@@ -80,29 +80,74 @@
 }
 
 .content h3 {
-  font-size: 1.25rem;
-  margin-bottom: 0.75rem;
+  font-size: 1.35rem;
+  margin-bottom: 0.25rem;
   color: var(--text-main);
+  font-weight: 700;
 }
 
-.content p {
+.role {
+  font-size: 0.9rem;
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.desc {
   font-size: 0.95rem;
   color: var(--text-muted);
+  margin-bottom: 1.25rem;
+  line-height: 1.5;
+}
+
+.responsibilities {
   margin-bottom: 1.5rem;
-  line-height: 1.6;
+}
+
+.responsibilities h5 {
+  font-size: 0.9rem;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.responsibilities ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.responsibilities li {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 0.4rem;
+  position: relative;
+  padding-left: 1.25rem;
+  line-height: 1.4;
+}
+
+.responsibilities li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: bold;
 }
 
 .techStack {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+  margin-top: auto;
 }
 
 .techTag {
-  padding: 4px 10px;
+  padding: 4px 12px;
   background: var(--primary-light);
-  color: #fff;
-  font-size: 0.75rem;
-  font-weight: 600;
-  border-radius: 4px;
+  color: var(--primary);
+  font-size: 0.7rem;
+  font-weight: 700;
+  border-radius: 20px;
+  border: 1px solid rgba(124, 58, 237, 0.2);
 }
