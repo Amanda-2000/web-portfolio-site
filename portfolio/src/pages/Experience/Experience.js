@@ -10,7 +10,28 @@ const Experience = () => {
       title: 'QA Trainee',
       company: 'Bank of Ceylon',
       date: 'September 2025 - February 2026',
-      desc: 'Tested web and mobile applications using automated and manual processes. Documented bugs and collaborated with developers to ensure code quality.',
+      projects: [
+        {
+          name: 'BOC Library Management System',
+          responsibilities: [
+            'Performed manual testing on web-based systems to identify functional and UI defects',
+            'Designed and executed test cases based on requirements and user scenarios',
+            'Logged, tracked, and verified bugs using defect tracking tools',
+            'Conducted regression testing to ensure issue fixes did not impact existing features',
+            'Collaborated with developers and team members to improve software quality',
+            'Prepared test reports and documentation'
+          ]
+        },
+        {
+          name: 'Data visualization platform',
+          responsibilities: [
+            'Designed and executed test cases to validate the functionality and performance of the BI and data visualization platform.',
+            'Performed API testing on FastAPI endpoints to ensure accurate data flow between frontend and backend systems.',
+            'Conducted UI and dashboard testing to verify data accuracy and consistency in visualizations built with Chart.js.',
+            'Validated database operations in SQL Server to ensure correct data storage, retrieval, and integrity.'
+          ]
+        }
+      ],
       icon: <Briefcase size={18} />,
     },
     {
@@ -47,7 +68,23 @@ const Experience = () => {
           <h5>{exp.company}</h5>
           <p>{exp.date}</p>
         </div>
+        
         {exp.desc && <p className={styles.desc}>{exp.desc}</p>}
+
+        {exp.projects && (
+          <div className={styles.projectsList}>
+            {exp.projects.map((project, pIndex) => (
+              <div key={pIndex} className={styles.projectItem}>
+                <h5 className={styles.projectName}>{project.name}</h5>
+                <ul className={styles.responsibilities}>
+                  {project.responsibilities.map((resp, rIndex) => (
+                    <li key={rIndex}>{resp}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        )}
       </div>
     </motion.div>
   );

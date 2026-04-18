@@ -16,12 +16,6 @@ const LinkedinIcon = ({ size }) => (
   </svg>
 );
 
-const TwitterIcon = ({ size }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
-  </svg>
-);
-
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -34,17 +28,14 @@ const Footer = () => {
         </div>
 
         <div className={styles.socials}>
-          <a href="https://github.com" target="_blank" rel="noreferrer" aria-label="GitHub">
+          <a href="https://github.com/Amanda-2000" target="_blank" rel="noreferrer" aria-label="GitHub">
             <GithubIcon size={20} />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/amanda-dissanayaka-777311288/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
             <LinkedinIcon size={20} />
           </a>
-          <a href="mailto:amanda@example.com" aria-label="Email">
+          <a href="mailto:amandayohani32@gmail.com" aria-label="Email">
             <Mail size={20} />
-          </a>
-          <a href="https://twitter.com" target="_blank" rel="noreferrer" aria-label="Twitter">
-            <TwitterIcon size={20} />
           </a>
         </div>
 

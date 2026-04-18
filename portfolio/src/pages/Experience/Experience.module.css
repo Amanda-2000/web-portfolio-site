@@ -122,6 +122,59 @@
   line-height: 1.6;
 }
 
+.projectsList {
+  margin-top: 1rem;
+}
+
+.projectItem {
+  margin-bottom: 1.25rem;
+}
+
+.projectItem:last-child {
+  margin-bottom: 0;
+}
+
+.projectName {
+  font-size: 0.95rem;
+  color: var(--text-main);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.projectName::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: var(--primary);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.responsibilities {
+  list-style: none;
+  padding-left: 0;
+}
+
+.responsibilities li {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 0.35rem;
+  position: relative;
+  padding-left: 1rem;
+  line-height: 1.5;
+}
+
+.responsibilities li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: bold;
+}
+
 @media (max-width: 992px) {
   .columns {
     grid-template-columns: 1fr;
